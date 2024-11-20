@@ -21,7 +21,7 @@ jobs:
     - name: Set up Node.js
       uses: actions/setup-node@v3
       with:
-        node-version: '22'
+        node-version: '20'
 
     # Step 3: Install dependencies and run tests
     - name: Install dependencies
@@ -52,5 +52,5 @@ jobs:
     # Step 3: Push Docker image to local Docker
     - name: Push Docker image
       run: |
-        docker tag your-username/your-app:latest localhost/your-app:latest
-        docker push localhost/your-app:latest
+        docker tag faryalshl/react-frontend:latest localhost/react-frontend:latest
+        docker push localhost/react-frontend:latest
